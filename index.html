@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Web Dev challenge - 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- bootstrap v4 beta-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!-- css files -->
+	 <link rel="stylesheet" href="css/main.css">
+	 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+
+	<div class="container container-fluid mb-5">
+		<!-- logo top -->
+		<div class="row justify-content-center"><img src="images/logo-top.png" alt="logo with lizard on the top" class="img-fluid logo mt-5"></div>
+		<div class="row justify-content-center">
+
+			<!-- left-column -->
+			<div class="col-sm-12 col-md-6 col-lg-6 px-5">
+				<div class="row justify-content-center my-5"><h1 class="text-center">Register Form </h1></div>
+				<div class="row">
+					<div class="container px-5 py-5 forms-bcg">
+						<form>
+							<div class="form-group ">
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Confirm Password">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your location">
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+										<p>I have read and accept the terms of use.</p>
+								</label>
+							</div>
+							<button type="button" class="btn btn-lg btn-success">Sign up</button>
+						</form>
+					</div>
+				</div>
+				<div class="row justify-content-center my-5"><h1 class="text-center">Send Email</h1></div>
+				<div class="row">
+					<div class="container px-5 py-5 forms-bcg">
+						<form>
+							<div class="form-group ">
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Email">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Confirm Password">
+							</div>
+							<textarea name="message" rows="10" class="form-control mb-2" id="extampleField" placeholder="Type your message here..."></textarea>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+										<p>Send copy to my Email</p>
+								</label>
+							</div>
+							<button type="button" class="btn btn-lg btn-block btn-success">Send Email</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- right column -->
+		<div class="col-sm-12 col-md-6 col-lg-6 px-5">
+			<div class="row justify-content-center my-5">
+				<h1 class="text-center">Sign In Form</h1>
+			</div>
+			<div class="row">
+				<div class="container px-5 py-5 forms-bcg">
+					<form action="">
+						<div class="form-group"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username"></div>
+						<div class="form-group"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="Password"></div>
+						<div class="form-check">
+							<label class="form-check-label">
+								<input class="form-check-input" type="checkbox" value="">
+									<p>Remember me</p>
+							</label>
+							<button type="button" class="btn btn-lg btn-success float-right">Sign in</button>
+							<div class="clearfix"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="row justify-content-center my-5">
+				<h1 class="text-center">Recover Form</h1>
+			</div>
+			<div class="row">
+				<div class="container px-5 py-5 forms-bcg">
+					<form action="">
+						<div class="form-group"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Email"></div>
+						<div class="form-group"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Phone number"></div>
+						<div>
+							<button type="button" class="btn btn-lg btn-success float-left">Send</button>
+							<button type="button" class="btn btn-lg btn-disabled float-right">Done</button>
+							<div class="clearfix"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="row justify-content-center my-5">
+				<h1 class="text-center">Subscribe Form</h1>
+			</div>
+				<div class="row">
+					<div class="container px-5 py-5 forms-bcg">
+						<form action="">
+							<div class="form-group"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your email"></div>
+							<div>
+								<button type="button" class="btn btn-lg btn-success float-left">Subscribe</button>
+								<button type="button" class="btn btn-lg btn-danger float-right">No, thanks</button>
+								<div class="clearfix"></div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row justify-content-center my-5"><img src="images/logo-down.png" alt="logo with lizard on bottom" class="img-fluid logo"></div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>

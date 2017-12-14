@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700,900" rel="stylesheet");
+
+body{
+	width: 100%;
+	background: url("../images/bcg.png") no-repeat;
+	background-size: cover;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1{
+	color: #fff;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+	font-weight: 400;
+
+}
+
+.logo{
+	opacity: .4;
+}
+
+.forms-bcg{
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
+}
+
