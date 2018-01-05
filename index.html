@@ -31,34 +31,37 @@
 				<div class="row justify-content-center my-5"><h1 class="text-center">Register Form </h1></div>
 				<div class="row">
 					<div class="container px-5 py-5 forms-bcg">
-						<form name="myForms">
+						<!-- first forms REGISTER -->
+						<form name="registration">
 							<div class="form-group">
 								<i class="icon fa fa-user fa-lg" aria-hidden="true"></i>
-								<input type="text" name="myInput" class="form-control" id="formGroupExampleInput" placeholder="Username" value="" required />
+								<input type="text" name="userName" class="form-control" id="formGroupExampleInput" placeholder= "Username" minlength="3" size= "20" value="" required />
 							</div>
 							<div class="form-group">
 								<i class="icon fa fa-unlock-alt fa-lg" aria-hidden="true"></i>
-								<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password" required />
+								<input type="text" name="password" class="form-control" id="formGroupExampleInput2" placeholder="Password" minlength="8" size="10" value="" required />
 							</div>
 							<div class="form-group">
 								<i class="icon fa fa-unlock-alt fa-lg" aria-hidden="true"></i>
-								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Confirm Password" required />
+								<input type="text" name="passConf" class="form-control" id="password" placeholder="Confirm Password" minlength="8" size="10" value="" required />
 							</div>
 							<div class="form-group">
 								<i class="icon fa fa-envelope fa-lg" aria-hidden="true"></i>
-								<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email" required />
+								<input type="text" name="email" class="form-control" id="email" placeholder="Email" size="35" value="" required />
+								<span class="error"></span>
 							</div>
 							<div class="form-group">
 								<i class="icon fa fa-map-marker fa-lg" aria-hidden="true"></i>
-								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your location" required />
+								<input type="text" name="location" class="form-control" id="formGroupExampleInput" placeholder="Your location" size="35" value="" required />
+								<span class="error"></span>
 							</div>
 							<div class="form-check">
 								<label class="form-check-label">
-									<input class="form-check-input" type="checkbox" value="">
+									<input class="form-check-input" type="checkbox" required />
 										<p>I have read and accept the terms of use.</p>
 								</label>
 							</div>
-							<button type="button" class="btn btn-lg btn-success" type="submit" >Sign up</button>
+							<button type="submit" class="btn btn-lg btn-success">Sign up</button>
 						</form>
 					</div>
 				</div>
@@ -68,24 +71,24 @@
 						<form>
 							<div class="form-group ">
 								<i class="icon fa fa-user fa-lg" aria-hidden="true"></i>
-								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name" required />
 							</div>
 							<div class="form-group">
 								<i class="icon fa fa-envelope fa-lg" aria-hidden="true"></i>
-								<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Email">
+								<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Email" required />
 							</div>
 							<div class="form-group">
 								<i class="icon fa fa-unlock-alt fa-lg" aria-hidden="true"></i>
-								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Confirm Password">
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Confirm Password" required />
 							</div>
 							<textarea name="message" rows="10" class="form-control mb-2" id="extampleField" placeholder="Type your message here..."></textarea>
 							<div class="form-check">
 								<label class="form-check-label">
-									<input class="form-check-input" type="checkbox" value="">
+									<input class="form-check-input" type="checkbox" required>
 										<p>Send copy to my Email</p>
 								</label>
 							</div>
-							<button type="button" class="btn btn-lg btn-block btn-success">Send Email</button>
+							<button type="submit" class="btn btn-lg btn-block btn-success">Send Email</button>
 						</form>
 					</div>
 				</div>
@@ -97,19 +100,19 @@
 			</div>
 			<div class="row">
 				<div class="container px-5 py-5 forms-bcg">
-					<form action="">
+					<form>
 						<div class="form-group">
 							<i class="icon fa fa-user fa-lg" aria-hidden="true"></i>
-							<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username"></div>
+							<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username" required /></div>
 						<div class="form-group">
 							<i class="icon fa fa-unlock-alt fa-lg" aria-hidden="true"></i>
-							<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Password"></div>
+							<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Password" required /></div>
 						<div class="form-check">
 							<label class="form-check-label">
-								<input class="form-check-input" type="checkbox" value="">
+								<input class="form-check-input" type="checkbox" value="" required />
 									<p>Remember me</p>
 							</label>
-							<button type="button" class="btn btn-lg btn-success float-right">Sign in</button>
+							<button type="submit" class="btn btn-lg btn-success float-right">Sign in</button>
 							<div class="clearfix"></div>
 						</div>
 					</form>
@@ -124,13 +127,13 @@
 					<form action="">
 						<div class="form-group">
 							<i class="icon fa fa-envelope fa-lg" aria-hidden="true"></i>
-							<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Email">
+							<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Email" required />
 						</div>
 						<div class="form-group">
 							<i class="icon fa fa-mobile fa-lg" aria-hidden="true"></i>
-							<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Phone number"></div>
+							<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Phone number" required /></div>
 						<div>
-							<button type="button" class="btn btn-lg btn-success float-left">Send</button>
+							<button type="submit" class="btn btn-lg btn-success float-left">Send</button>
 							<button type="button" class="btn btn-lg btn-disabled float-right">Done</button>
 							<div class="clearfix"></div>
 						</div>
@@ -146,9 +149,9 @@
 						<form action="">
 							<div class="form-group">
 								<i class="icon fa fa-envelope fa-lg" aria-hidden="true"></i>
-								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your email"></div>
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your email" required /></div>
 							<div>
-								<button type="button" class="btn btn-lg btn-success float-left">Subscribe</button>
+								<button type="submit" class="btn btn-lg btn-success float-left">Subscribe</button>
 								<button type="button" class="btn btn-lg btn-danger float-right">No, thanks</button>
 								<div class="clearfix"></div>
 							</div>

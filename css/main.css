@@ -39,6 +39,7 @@ input.form-control{
 	background-color: transparent !important;
 }
 
+
 .form-group{
 	padding-left: 15px;
 	border: solid 1px lightgrey;
@@ -56,4 +57,22 @@ textarea{
  background-image: -ms-linear-gradient(top, #4ba614, #008c00);
  background-image: -o-linear-gradient(top, #4ba614, #008c00);
  background-image: linear-gradient(to bottom, #4ba614, #008c00);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#4ba614, endColorstr=#008c00);
+}
+
+/*validation errors*/
+.error {
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
 }
